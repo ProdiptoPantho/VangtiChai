@@ -1,0 +1,279 @@
+<!-- This is the final UI for the phone in landscape mode. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <!-- Displays the entered amount -->
+    <TextView
+        android:id="@+id/takaTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="start"
+        android:text="@string/taka_label_initial"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/keypad_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Guideline to separate keypad from the top content -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/keypad_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <!-- Flow for arranging note tables -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="changeTable,changeTable2"
+        app:flow_horizontalStyle="spread"
+        app:flow_verticalBias="0.5"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/keypad_guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_guideline" />
+
+    <!-- First column of the change table -->
+    <TableLayout
+        android:id="@+id/changeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_500_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note500"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_100_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note100"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_50_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note50"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_20_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Second column of the change table -->
+    <TableLayout
+        android:id="@+id/changeTable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_10_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_5_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_2_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/note_1_label"
+                android:textSize="@dimen/note_label_text_size" />
+            <TextView
+                android:id="@+id/note1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/initial_note_count"
+                android:textSize="@dimen/note_count_text_size" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Guideline to separate keypad from the change tables -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/keypad_guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- Keypad Buttons -->
+    <Button
+        android:id="@+id/button7"
+        style="@style/Calculator.Button"
+        android:text="@string/button_7"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/keypad_guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_guideline" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Calculator.Button"
+        android:text="@string/button_8"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_guideline" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Calculator.Button"
+        android:text="@string/button_9"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_guideline" />
+
+    <ImageButton
+        android:id="@+id/clearButton"
+        style="@style/Calculator.Button.Action"
+        android:contentDescription="@string/button_clear"
+        android:src="@drawable/ic_clear"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_guideline" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Calculator.Button"
+        android:text="@string/button_4"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/keypad_guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Calculator.Button"
+        android:text="@string/button_5"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Calculator.Button"
+        android:text="@string/button_6"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Calculator.Button"
+        android:text="@string/button_1"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/keypad_guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Calculator.Button"
+        android:text="@string/button_2"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Calculator.Button"
+        android:text="@string/button_3"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/Calculator.Button"
+        android:text="@string/button_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

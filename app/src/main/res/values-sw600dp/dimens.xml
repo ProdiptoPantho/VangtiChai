@@ -1,0 +1,14 @@
+<!-- This file overrides dimensions for tablets (screens with smallest width > 600dp). -->
+<!-- This allows for a more spacious layout on larger screens. -->
+<resources>
+    <!-- Margins and Padding -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="keypad_margin_start">32dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="taka_text_size">34sp</dimen>
+    <dimen name="note_label_text_size">24sp</dimen>
+    <dimen name="note_count_text_size">24sp</dimen>
+    <dimen name="keypad_button_text_size">28sp</dimen>
+</resources>

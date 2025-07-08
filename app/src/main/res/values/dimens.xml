@@ -1,0 +1,13 @@
+
+<resources>
+    <!-- Margins and Padding -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="keypad_margin_start">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="taka_text_size">24sp</dimen>
+    <dimen name="note_label_text_size">18sp</dimen>
+    <dimen name="note_count_text_size">18sp</dimen>
+    <dimen name="keypad_button_text_size">20sp</dimen>
+</resources>

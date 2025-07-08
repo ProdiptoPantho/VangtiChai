@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. This is the single theme for the entire app. -->
+    <style name="Theme.VangtiChai" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set the background and text colors for the dark theme -->
+        <item name="android:windowBackground">@color/dark_theme_bg</item>
+        <item name="android:textColor">@color/dark_theme_text</item>
+
+        <!-- Primary brand color (not visible with NoActionBar, but good practice to define) -->
+        <item name="colorPrimary">@color/keypad_button_dark_bg</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/keypad_button_action_bg</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/dark_theme_bg</item>
+    </style>
+
+    <!-- Style for standard digit buttons -->
+    <style name="Calculator.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">@dimen/keypad_button_text_size</item>
+        <item name="android:textColor">@color/dark_theme_text</item>
+        <item name="backgroundTint">@color/keypad_button_dark_bg</item>
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    <!-- Style for the action ImageButton -->
+    <style name="Calculator.Button.Action" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:background">@drawable/keypad_button_action</item>
+    </style>
+
+</resources>

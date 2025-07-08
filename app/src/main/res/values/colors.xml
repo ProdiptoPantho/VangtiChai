@@ -1,0 +1,13 @@
+<!-- This file defines the color palette for the application. -->
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="dark_theme_bg">#1C1C1E</color>
+    <color name="dark_theme_text">#F2F2F7</color>
+
+    <!-- Keypad Button Colors -->
+    <color name="keypad_button_dark_bg">#3A3A3C</color>
+    <color name="keypad_button_action_bg">#0A84FF</color>
+</resources>
