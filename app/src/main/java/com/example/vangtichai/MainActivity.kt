@@ -110,6 +110,7 @@ class MainActivity : AppCompatActivity() {
 
         for (i in notes.indices) {
             val count = remaining / notes[i]
+            // *** FIX: Set the text to the calculated count, not the label string ***
             textViews[i].text = count.toString()
             remaining %= notes[i]
         }

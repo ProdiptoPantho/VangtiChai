@@ -5,15 +5,15 @@
     <string name="taka_label_format">৳ Taka: %d</string>
     <string name="taka_label_initial">৳ Taka: 0</string>
 
-    <!-- Note Labels with Taka Sign -->
-    <string name="note_500_label">৳ 500:</string>
-    <string name="note_100_label">৳ 100:</string>
-    <string name="note_50_label">৳ 50:</string>
-    <string name="note_20_label">৳ 20:</string>
-    <string name="note_10_label">৳ 10:</string>
-    <string name="note_5_label">৳ 5:</string>
-    <string name="note_2_label">৳ 2:</string>
-    <string name="note_1_label">৳ 1:</string>
+    <!-- Note Labels with Taka Sign and format placeholder -->
+    <string name="note_500_label">৳ 500: </string>
+    <string name="note_100_label">৳ 100: </string>
+    <string name="note_50_label">৳ 50: </string>
+    <string name="note_20_label">৳ 20: </string>
+    <string name="note_10_label">৳ 10: </string>
+    <string name="note_5_label">৳ 5: </string>
+    <string name="note_2_label">৳ 2: </string>
+    <string name="note_1_label">৳ 1: </string>
     <string name="initial_note_count">0</string>
 
     <!-- Button Labels -->
@@ -28,4 +28,6 @@
     <string name="button_9">9</string>
     <string name="button_0">0</string>
     <string name="button_clear">Clear</string>
+    <!-- This is the missing string that caused the error -->
+    <string name="button_reset_description">Reset amount</string>
 </resources>
