@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/taka_label_initial"
-        android:textSize="48sp"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
